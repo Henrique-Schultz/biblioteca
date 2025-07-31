@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LaboratorioRestApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08512555d317ac5adc56fd1dfe8dfd06bf4724c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64bb9464f23f32d82e8a92a2dbe745333bcf0cad")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaboratorioRestApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaboratorioRestApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
