@@ -31,7 +31,7 @@ namespace LaboratorioRestApi.Repositories
                                   .ToList();
         }
 
-        public Livro ObterPorId(int id)
+        public Livro? ObterPorId(int id)
         {
             return _context.Livros.Include(l => l.Autor).FirstOrDefault(l => l.Id == id);
         }

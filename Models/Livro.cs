@@ -9,7 +9,7 @@ namespace LaboratorioRestApi.Models
         public int Id { get; set; }
 
         [Required]
-        public string Titulo { get; set; }
+        public required string Titulo { get; set; }
 
         [Required]
         public int Ano { get; set; }
@@ -18,8 +18,8 @@ namespace LaboratorioRestApi.Models
         public int AutorId { get; set; }
 
         [ForeignKey("AutorId")]
-        public Autor Autor { get; set; }
+        public required Autor Autor { get; set; }
 
-        public List<Emprestimo> Emprestimos { get; set; }
+        public required List<Emprestimo> Emprestimos { get; set; }
     }
 }

@@ -10,6 +10,8 @@ namespace LaboratorioRestApi.Data
 
         public DbSet<Autor> Autores { get; set; }
         public DbSet<Livro> Livros { get; set; }
+        public DbSet<Emprestimo> Emprestimos { get; set; }
+
 
         // public DbSet<Emprestimo> Emprestimos { get; set; } ← depois a gente adiciona
 

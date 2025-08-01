@@ -7,7 +7,7 @@ namespace LaboratorioRestApi.Repositories.Interfaces
         void Adicionar(Livro livro);
         List<Livro> ListarTodos();
         List<Livro> ListarPorAutor(int autorId);
-        Livro ObterPorId(int id);
+        Livro? ObterPorId(int id);
         void Salvar();
     }
 }
