@@ -9,13 +9,17 @@ namespace LaboratorioRestApi.Models
         public int Id { get; set; }
 
         [Required]
-        public required string Titulo { get; set; }
+        public string Titulo { get; set; }
 
-        // Chave estrangeira (FK)
-        [ForeignKey("Autor")]
+        [Required]
+        public int Ano { get; set; }
+
+        [Required]
         public int AutorId { get; set; }
 
-        // Propriedade de navegação
-        public Autor? Autor { get; set; }
+        [ForeignKey("AutorId")]
+        public Autor Autor { get; set; }
+
+        public List<Emprestimo> Emprestimos { get; set; }
     }
 }

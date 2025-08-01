@@ -1,5 +1,6 @@
 using LaboratorioRestApi.Data;
 using LaboratorioRestApi.Repositories;
+using LaboratorioRestApi.Repositories.Interfaces;
 using LaboratorioRestApi.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<BibliotecaDbContext>(options =>
 
 // Adiciona o Repository
 builder.Services.AddScoped<IAutorRepository, AutorRepository>();
+builder.Services.AddScoped<ILivroRepository, LivroRepository>();
 
 // Adiciona o Service
 builder.Services.AddScoped<BibliotecaService>();

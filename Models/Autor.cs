@@ -14,6 +14,6 @@ namespace LaboratorioRestApi.Models
         public required string UltimoNome { get; set; }
 
         // Propriedade de navegação (1 autor → muitos livros)
-        public ICollection<Livro> Livros { get; set; } = [];
+        public List<Livro> Livros { get; set; } = [];
     }
 }

@@ -17,7 +17,7 @@ namespace LaboratorioRestApi.Controllers
 
         // GET: api/autores?sobrenome=Silva
         [HttpGet]
-        public ActionResult<IEnumerable<Autor>> GetAutoresPorSobrenome([FromQuery] string sobrenome)
+        public ActionResult<List<Autor>> GetAutoresPorSobrenome([FromQuery] string sobrenome)
         {
             var autores = _service.BuscarAutoresPorSobrenome(sobrenome);
             return Ok(autores);

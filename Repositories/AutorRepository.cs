@@ -12,7 +12,7 @@ namespace LaboratorioRestApi.Repositories
             _context = context;
         }
 
-        public IEnumerable<Autor> BuscarPorUltimoNome(string ultimoNome)
+        public List<Autor> BuscarPorUltimoNome(string ultimoNome)
         {
             return _context.Autores
                 .Where(a => a.UltimoNome.ToLower() == ultimoNome.ToLower())
