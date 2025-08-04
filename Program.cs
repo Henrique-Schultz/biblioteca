@@ -4,13 +4,10 @@ using LaboratorioRestApi.Repositories.Interfaces;
 using LaboratorioRestApi.Services;
 using Microsoft.EntityFrameworkCore;
 
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Adiciona o DbContext com banco InMemory
-builder.Services.AddDbContext<BibliotecaDbContext>(options =>
-    options.UseInMemoryDatabase("BibliotecaDB"));
+builder.Services.AddDbContext<BibliotecaDbContext>();
 
 // Adiciona o Repository
 builder.Services.AddScoped<IAutorRepository, AutorRepository>();
@@ -21,7 +18,6 @@ builder.Services.AddScoped<IEmprestimoRepository, EmprestimoRepository>();
 // Adiciona o Service
 builder.Services.AddScoped<BibliotecaService>();
 
-// Adiciona os serviços MVC/API
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
